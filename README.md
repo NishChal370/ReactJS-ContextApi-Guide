@@ -13,6 +13,8 @@ It helps to prevent props driling.
 
 ![ContextApiFlow](./src/assets/images/contextApiChart.jpg)
 
+
+
 **Props Drilling:**
 
 It is the situation when the data of parent component is passed to every nested child component cause last child need that data.
@@ -21,9 +23,12 @@ It can cause unnecessary passing of data wether the nested component needed or n
 ![PropsDrillFlow](./src/assets/images/propDrillingChart.jpg)
 
 
+
+
 ## Steps to use Context API
 
 **1. Create context**
+
 React.createContext is used to create context which return two object with  Provider and Consumer.
 
 
@@ -34,6 +39,7 @@ export const Context = createContext();
 ```
 
 **2. Context Provider**
+
 Context Provider keeps the data that is used or needed by the childern components.
 It is placed in parent component.
 

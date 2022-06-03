@@ -51,6 +51,7 @@ It is placed in parent component.
 
 
 **3. Context Consumer**
+
 Context Consumer consumers the data provided by the provider. It basically helps child component to get data or value from provider.
 
 ```javascript

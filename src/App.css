@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  font-size: 2rem;
+}
+
+.app__button-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+.app__button-container>button{
+  font-size: 1.2rem;
 }
 
 .App-logo {

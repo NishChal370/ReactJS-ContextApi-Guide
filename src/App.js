@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { useContext } from 'react';
 import './App.css';
+import AppChild from './component/AppChild';
+import { Context } from './context/dataContext';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      const { increaseDataHandler, decreaseDataHandler } = useContext(Context);
+
+      return (
+            <div className="App">
+                  <h1>Welcome</h1> 
+                  <p>Click to change state of context</p>
+
+                  <span className='app__button-container'>
+                        <button onClick={increaseDataHandler}>Increase value</button>
+                        <button onClick={decreaseDataHandler}>Decrease value</button>
+                  </span>
+                  
+                  <AppChild/>
+            </div>
+      )
 }
 
-export default App;
+export default App

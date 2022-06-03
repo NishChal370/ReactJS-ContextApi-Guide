@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
+1. [Steps to use Context API](#Steps to use Context API)
 
 
 ## Introduction

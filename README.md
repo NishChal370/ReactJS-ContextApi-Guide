@@ -8,8 +8,7 @@
 
 ## Introduction
 
-Context API is a state management tool. It provides a way to pass data through the component tree without having to pass downward manually in every level. 
-It helps to prevent props driling.
+Context API is a mechanism for managing state. It allows you to transfer data across the component tree without having to manually feed data down each level. It prevents props from driling.
 
 ![ContextApiFlow](./src/assets/images/contextApiChart.jpg)
 
@@ -17,8 +16,8 @@ It helps to prevent props driling.
 
 **Props Drilling:**
 
-It is the situation when the data of parent component is passed to every nested child component cause last child need that data.
-It can cause unnecessary passing of data wether the nested component needed or not.
+It occurs when the data of the parent component is supplied to each of the nested child components because the last child requires that data.
+It can result in needless data transfer, regardless of whether the nested component is required.
 
 ![PropsDrillFlow](./src/assets/images/propDrillingChart.jpg)
 
